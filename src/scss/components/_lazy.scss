@@ -1,0 +1,37 @@
+.lazy{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+
+    .lazy__title{
+        font-family: 'Coda', cursive;
+        font-size: 140px;
+        color: $border_color;
+        padding-top: 0px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+
+        span{
+            margin-left: 40px;
+        }
+
+        border-bottom: 1px solid $border_color;
+
+    }
+
+    .lazy__description{
+        font-family: 'Work Sans', cursive;
+
+        span{
+            display: block;
+            margin-left: 80px;
+            max-width: 450px;
+            margin-top: 40px;
+            
+        }
+
+    }
+
+
+}

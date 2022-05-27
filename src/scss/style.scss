@@ -3,9 +3,18 @@
 @import './settings/colors';
 @import './settings/fonts';
 @import './components/navbar';
+@import './components/lazy';
+
 
 
 html, body{
     margin: 0;
     padding: 0;
+}
+
+main{
+    margin: 0px 140px;
+    border-left: 1px solid $border_color;
+    border-right: 1px solid $border_color;
+    height: auto;
 }

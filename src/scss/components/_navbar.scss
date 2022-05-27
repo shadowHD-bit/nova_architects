@@ -1,0 +1,83 @@
+header{
+    width: 100%;
+    height: auto;
+    font-family: 'Coda', cursive;
+
+    .navbar__container{
+        height: 80px;
+        width: 100%;
+        border-bottom: 1px solid $border_color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        .logo_section{
+            border-right: 1px solid $border_color;
+            width: 140px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .logo{
+                text-decoration: none;
+                font-size: 50px;
+                color: $border_color;
+                text-align: center;
+            }
+        }
+
+        .navs_section{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: end;
+            padding-right: 140px;
+
+            nav{
+                .nav_btn{
+                    color: $border_color;
+                    text-decoration: none;
+                    margin: 0px 93px 0px 0px;
+                    transition: ease all .5s;
+
+                }
+
+                .nav_btn:hover{
+                    color: $orange;
+                    transition: ease all .5s;
+                }
+            }
+        }
+
+        .right_section{
+            display: flex;
+            right: 0;
+            width: 140px;
+            height: 100%;
+            border-left: 1px solid $border_color;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            transition: ease all .5s;
+            background-color: $orange;
+            cursor: pointer;
+            
+            .nav_btn{
+                color: white;
+                text-decoration: none;
+                transition: ease all .5s;
+            }
+        }
+
+        .right_section:hover{
+            background-color: white;
+           
+            .nav_btn{
+                color: $border_color;
+                transition: ease all .5s;
+            }
+        }
+    }
+}

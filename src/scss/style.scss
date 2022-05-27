@@ -1,0 +1,11 @@
+// Main styles file
+
+@import './settings/colors';
+@import './settings/fonts';
+@import './components/navbar';
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,147 @@
+.about{
+    width: auto;
+    height: auto;
+    margin: 0px 140px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $border_color;
+
+    .about__title{
+        span{
+            margin-left: 40px;
+            font-family: 'Coda', cursive;
+            font-size: 63px;
+            color: $border_color;
+        }
+
+        padding: 92px 0px;
+        border-bottom: 1px solid $border_color;
+    }
+
+    .about__content{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+    .btn__out{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        .circle{
+            background-color: $orange;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+
+            i{
+                color: white;
+                font-size: 40px;
+                transition: ease all .5s;
+
+            }
+        }
+
+        .circle:hover ~ .text{
+            font-size: 15px;
+            transition: ease all .5s;
+        }
+
+        .circle:hover > i{
+            animation: spin .5s ;
+        }
+
+        @keyframes spin {
+            from{ transform: rotate(0deg);}
+            to{ transform: rotate(360deg);}
+        }
+
+        .text{
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            color: $border_color;
+            writing-mode: tb-rl;
+            transform:rotate(180deg);
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            transition: ease all .5s;
+        }
+
+    }
+
+        .text_content{
+            margin-top: 40px;
+            margin-bottom: 70px;
+
+            span{
+                font-family: 'Coda', cursive;
+                font-size: 20px;
+                display: block;
+                max-width: 750px;
+                margin-left: 80px;
+            }
+        }
+
+        .card{
+            width: 100%;
+            height: 550px;
+            position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            .card_content{
+                width: 500px;
+                height: 500px;
+                cursor: pointer;
+
+                .font_card, .back_card{
+                    width: 500px;
+                    height: 500px;
+                    position: absolute;
+                    backface-visibility: hidden;
+                    overflow: hidden;
+                    transition: transform .6s linear;
+                }
+
+                .font_card{
+                    background-image: url(./img/card.png);
+                    transform: perspective(500px) rotateY(0deg);
+                }
+
+                .back_card{
+                    background-color: $orange;
+                    transform: perspective(500px) rotateY(180deg);
+                    
+                    .text{
+                        font-family: 'Coda', cursive;
+                        font-size: 20px;
+                        color: white;
+                        padding: 20px;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+            .card_content:hover > .font_card{
+                transform: perspective(500px) rotateY(-180deg);
+            }
+            .card_content:hover > .back_card{
+                transform: perspective(500px) rotateY(0deg);
+
+            }
+
+        }
+
+    }
+}

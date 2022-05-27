@@ -5,8 +5,19 @@
 @import './components/navbar';
 @import './components/lazy';
 @import './components/image';
+@import './components/about';
 
-
+body::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: $orange;        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: white;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid $orange;  /* padding вокруг плашки */
+}
 
 html, body{
     margin: 0;

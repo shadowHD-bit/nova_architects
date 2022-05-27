@@ -1,7 +1,11 @@
 .lazy{
-    width: 100%;
+    width: auto;
     height: auto;
     padding-bottom: 40px;
+    margin: 0px 140px;
+    border-left: 1px solid $border_color;
+    border-right: 1px solid $border_color;
+    background-color: white;
 
     .lazy__title{
         font-family: 'Coda', cursive;

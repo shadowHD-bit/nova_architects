@@ -40,7 +40,7 @@ $(document).ready(function(){
     let next = nextSlide + 1;
     let allSlides = slick.slideCount;
 
-    $(title).text(infos[next].title).show(1000);
+    $(title).text(infos[next].title);
     $(text).text(infos[next].text);
   };
   $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {

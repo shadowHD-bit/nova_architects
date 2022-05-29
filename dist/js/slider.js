@@ -48,3 +48,14 @@ $(document).ready(function(){
 
   });
 });
+
+
+$('.fade_slider').slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',
+  nextArrow: document.querySelector('#nextt'),
+  prevArrow: document.querySelector('#prevv')
+});
+	

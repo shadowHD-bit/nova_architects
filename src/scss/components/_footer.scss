@@ -1,0 +1,94 @@
+footer{
+    width: auto;
+    height: auto;
+    margin: 0px 140px;
+
+    .footer_content{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+        .info{
+            width: 33.3%;
+            padding: 40px;
+
+            .block_info{
+                width: 100%;
+                background: #574B4B;
+                display: flex;
+                flex-direction: column;
+
+                .img{
+                    border-bottom: 1px solid white;
+                    padding-left: 40px;
+                }
+
+                .title{
+                    padding: 20px;
+
+                    span{
+                        font-family: 'Coda', cursive;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .mail{
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+
+
+                    span{
+                        font-family: 'Work Sans', cursive;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn{
+        width: 33.3%;
+        border-left: 1px solid #DBD9D9;
+        border-right: 1px solid #DBD9D9;
+        display: flex;
+        flex-direction: column;
+
+        a{
+            text-decoration: none;
+        }
+
+        .btn_footer{
+            width: 100%;
+            text-align: center;
+            padding: 70px 0px;
+
+            span{
+                text-decoration: none;
+                font-family: 'Work Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $border_color;
+            }
+        }
+
+        .btn_footer:hover{
+            background-color: $orange;
+
+            span{
+                color: white;
+            }
+        }
+    }
+}

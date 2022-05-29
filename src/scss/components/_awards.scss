@@ -1,0 +1,93 @@
+.awards{
+    width: auto;
+    height: auto;
+    margin: 0px 140px;
+
+    .awards__title{
+        width: 100%;
+        padding: 90px 0px;
+
+        span{
+            font-family: 'Coda', cursive;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 63px;
+            line-height: 83px;
+            color: $border_color;
+            display: block;
+            margin-left: 40px;
+        }
+    }
+
+    .awards__content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .awards_item{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            .award_info{
+                width: 66.6%;
+                height: auto;
+                border-top: 1px solid $border_color;
+                border-bottom: 1px solid $border_color;
+                display: flex;
+                flex-direction: row;
+
+                .name_award{
+                    width: 50%;
+                    padding: 60px;
+                    .name{
+                    
+                        span{
+                            font-family: 'Coda', cursive;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 32px;
+                            line-height: 42px;
+                            color: $border_color;
+                            display: block;
+                        }
+                    }
+
+                    .year{
+
+                        span{
+                            font-family: 'Work Sans', cursive;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+                .description_award{
+                    width: 50%;
+                    padding: 60px;
+
+                    span{
+                        font-family: 'Work Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 23px;
+                        color: $border_color;
+                    }
+                }
+            }
+
+            .img_award{
+                width: 33.3%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+}

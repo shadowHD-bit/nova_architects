@@ -4,12 +4,20 @@
     height: auto;
     margin: 0px 140px;
 
+    @media (max-width: 1199px) {
+        margin: 0px 100px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 0px 50px;
+    }
+
     .office__title{
         width: 100%;
-        padding: 90px 0px;
         border-bottom: 1px solid $border_color;
 
         span{
+            padding: 90px 0px;
             font-family: 'Coda', cursive;
             font-style: normal;
             font-weight: 400;
@@ -18,6 +26,41 @@
             color: $border_color;
             display: block;
             margin-left: 40px;
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 55px;
+                margin-left: 35px;
+                padding: 72px 0px;
+            }
+    
+            @media (min-width: 768px) and (max-width: 991px) {
+                font-size: 45px;
+                margin-left: 30px;
+                padding: 52px 0px;
+            }
+    
+            @media (min-width: 480px) and (max-width: 767px) {
+                font-size: 35px;
+                margin-left: 25px;
+                padding: 32px 0px;
+                line-height: 35px;
+
+            }
+    
+            @media (min-width: 320px) and (max-width: 479px) {
+                font-size: 25px;
+                margin-left: 0px;
+                padding: 22px 0px;
+                line-height: 25px;
+
+            }
+    
+            @media (max-width: 320px) {
+                font-size: 15px;
+                margin-left: 0px;
+                padding: 12px 0px;
+                line-height: 15px;
+            }
         }
     }
 
@@ -28,11 +71,19 @@
         flex-direction: row;
         border-bottom: 1px solid $border_color;
 
+        @media (max-width: 991px) {
+            display: flex;
+            justify-content: center;
+        }
+
 
         .arrow{
             width: 15%;
             height: auto;
             position: relative;
+            @media (max-width: 991px) {
+                display: none;
+            }
 
             .circle_grey{
                 width: 64px;
@@ -43,6 +94,9 @@
                 align-items: center;
                 justify-content: center;
                 cursor: pointer;
+                @media (max-width: 991px) {
+                    display: none;
+                }
 
                 i{
                     font-size: 20px;
@@ -76,11 +130,33 @@
 
             .item{
                 width: 100%;
-                height: 70vh;
+                height: 800px;
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-attachment: fixed;
+                
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    height: 700px;
+                }
+        
+                @media (min-width: 768px) and (max-width: 991px) {
+                    height: 500px;
+                }
+        
+                @media (min-width: 480px) and (max-width: 767px) {
+                    height: 400px;
+    
+                }
+        
+                @media (min-width: 320px) and (max-width: 479px) {
+                    height: 200px;
+                }
+        
+                @media (max-width: 320px) {
+                    height: 100px;
+                }
             }
         }
     }

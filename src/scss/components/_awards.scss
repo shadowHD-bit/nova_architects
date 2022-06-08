@@ -3,9 +3,16 @@
     height: auto;
     margin: 0px 140px;
 
+    @media (max-width: 1199px) {
+        margin: 0px 100px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 0px 50px;
+    }
+
     .awards__title{
         width: 100%;
-        padding: 90px 0px;
 
         span{
             font-family: 'Coda', cursive;
@@ -16,6 +23,38 @@
             color: $border_color;
             display: block;
             margin-left: 40px;
+            padding: 90px 0px;
+
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 55px;
+                margin-left: 35px;
+                padding: 72px 0px;
+            }
+    
+            @media (min-width: 768px) and (max-width: 991px) {
+                font-size: 45px;
+                margin-left: 30px;
+                padding: 52px 0px;
+            }
+    
+            @media (min-width: 480px) and (max-width: 767px) {
+                font-size: 35px;
+                margin-left: 25px;
+                padding: 32px 0px;
+            }
+    
+            @media (min-width: 320px) and (max-width: 479px) {
+                font-size: 25px;
+                margin-left: 0px;
+                padding: 22px 0px;
+            }
+    
+            @media (max-width: 320px) {
+                font-size: 15px;
+                margin-left: 0px;
+                padding: 12px 0px;
+            }
         }
     }
 
@@ -24,23 +63,63 @@
         display: flex;
         flex-direction: column;
         height: auto;
+        border-bottom: 1px solid $border_color;
+
 
         .awards_item{
             width: 100%;
             display: flex;
             flex-direction: row;
 
+            @media (max-width: 991px) {
+                flex-direction: column;
+            }
+
+
             .award_info{
                 width: 66.6%;
                 height: auto;
                 border-top: 1px solid $border_color;
-                border-bottom: 1px solid $border_color;
                 display: flex;
                 flex-direction: row;
+
+                @media (max-width: 991px) {
+                    width: 100%;       
+                }
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
 
                 .name_award{
                     width: 50%;
                     padding: 60px;
+
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        padding: 50px;
+                    }
+            
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        padding: 40px;
+                    }
+            
+                    @media (min-width: 480px) and (max-width: 767px) {
+                        padding: 30px;
+                    }
+            
+                    @media (min-width: 320px) and (max-width: 479px) {
+                        padding: 20px;
+                    }
+            
+                    @media (max-width: 320px) {
+                        padding: 10px;
+                    }
+
+
                     .name{
                     
                         span{
@@ -51,6 +130,26 @@
                             line-height: 42px;
                             color: $border_color;
                             display: block;
+
+                            @media (min-width: 992px) and (max-width: 1199px) {
+                                font-size: 30px;
+                            }
+                    
+                            @media (min-width: 768px) and (max-width: 991px) {
+                                font-size: 25px;
+                            }
+                    
+                            @media (min-width: 480px) and (max-width: 767px) {
+                                font-size: 20px;
+                            }
+                    
+                            @media (min-width: 320px) and (max-width: 479px) {
+                                font-size: 17px;
+                            }
+                    
+                            @media (max-width: 320px) {
+                                font-size: 15px;
+                            }
                         }
                     }
 
@@ -62,6 +161,26 @@
                             font-weight: 400;
                             font-size: 13px;
                             line-height: 20px;
+
+                            @media (min-width: 992px) and (max-width: 1199px) {
+                                font-size: 11px;
+                            }
+                    
+                            @media (min-width: 768px) and (max-width: 991px) {
+                                font-size: 10px;
+                            }
+                    
+                            @media (min-width: 480px) and (max-width: 767px) {
+                                font-size: 9px;
+                            }
+                    
+                            @media (min-width: 320px) and (max-width: 479px) {
+                                font-size: 8px;
+                            }
+                    
+                            @media (max-width: 320px) {
+                                font-size: 7px;
+                            }
                         }
                     }
                 }
@@ -70,6 +189,30 @@
                     width: 50%;
                     padding: 60px;
 
+                    @media (max-width: 767px) {
+                        width: 100%;
+                    }
+
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        padding: 50px;
+                    }
+            
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        padding: 40px;
+                    }
+            
+                    @media (min-width: 480px) and (max-width: 767px) {
+                        padding: 30px;
+                    }
+            
+                    @media (min-width: 320px) and (max-width: 479px) {
+                        padding: 20px;
+                    }
+            
+                    @media (max-width: 320px) {
+                        padding: 10px;
+                    }
+
                     span{
                         font-family: 'Work Sans';
                         font-style: normal;
@@ -77,6 +220,26 @@
                         font-size: 18px;
                         line-height: 23px;
                         color: $border_color;
+
+                        @media (min-width: 992px) and (max-width: 1199px) {
+                            font-size: 15px;
+                        }
+                
+                        @media (min-width: 768px) and (max-width: 991px) {
+                            font-size: 15px;
+                        }
+                
+                        @media (min-width: 480px) and (max-width: 767px) {
+                            font-size: 15px;
+                        }
+                
+                        @media (min-width: 320px) and (max-width: 479px) {
+                            font-size: 15px;
+                        }
+                
+                        @media (max-width: 320px) {
+                            font-size: 15px;
+                        }
                     }
                 }
             }
@@ -86,6 +249,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                img{
+                    @media (max-width: 1440px) {
+                        width: 80%;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    display: none;
+                }
             }
         }
     }

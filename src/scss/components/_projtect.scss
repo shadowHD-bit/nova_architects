@@ -3,6 +3,14 @@
     height: auto;
     margin: 0px 140px;
 
+    @media (max-width: 1199px) {
+        margin: 0px 100px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 0px 50px;
+    }
+
     .title_project{
 
         span{
@@ -12,6 +20,36 @@
             color: $border_color;
             display: block;
             padding: 90px 0px;
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                font-size: 55px;
+                margin-left: 35px;
+                padding: 72px 0px;
+            }
+    
+            @media (min-width: 768px) and (max-width: 991px) {
+                font-size: 45px;
+                margin-left: 30px;
+                padding: 52px 0px;
+            }
+    
+            @media (min-width: 480px) and (max-width: 767px) {
+                font-size: 35px;
+                margin-left: 25px;
+                padding: 32px 0px;
+            }
+    
+            @media (min-width: 320px) and (max-width: 479px) {
+                font-size: 25px;
+                margin-left: 0px;
+                padding: 22px 0px;
+            }
+    
+            @media (max-width: 320px) {
+                font-size: 15px;
+                margin-left: 0px;
+                padding: 12px 0px;
+            }
         }
 
         border-bottom: 1px solid $border_color;
@@ -29,10 +67,48 @@
             min-height: 600px;
             border-bottom: 1px solid $border_color;
 
+            @media (max-width: 479px) {
+                flex-direction: column;
+            }
+
+
+            @media (min-width: 1200px) and (max-width: 1620px) {
+                min-height: 500px;
+            }
+
+            @media (min-width: 992px) and (max-width: 1199px) {
+                min-height: 400px;
+            }
+    
+            @media (min-width: 768px) and (max-width: 991px) {
+                min-height: 350px;
+            }
+    
+            @media (min-width: 480px) and (max-width: 767px) {
+                min-height: 300px;
+            }
+    
+            @media (min-width: 320px) and (max-width: 479px) {
+                min-height: 200px;
+            }
+    
+            @media (max-width: 320px) {
+                min-height: 100px;
+            }
+
             .navigate_left{
                 width: 40%;
                 padding: 30px;
                 position: relative;
+
+                @media (max-width: 1620px) {
+                    width: 30%;
+                }
+
+                @media (max-width: 479px) {
+                    width: 90%;
+                }
+    
 
                 .information{
 
@@ -40,6 +116,30 @@
                         font-family: 'Coda', cursive;
                         font-size: 31px;
                         transition: .5s;
+
+                        @media (min-width: 1200px) and (max-width: 1620px) {
+                            font-size: 27px;
+                        }
+            
+                        @media (min-width: 992px) and (max-width: 1199px) {
+                            font-size: 23px;
+                        }
+                
+                        @media (min-width: 768px) and (max-width: 991px) {
+                            font-size: 19px;
+                        }
+                
+                        @media (min-width: 480px) and (max-width: 767px) {
+                            font-size: 15px;
+                        }
+                
+                        @media (min-width: 320px) and (max-width: 479px) {
+                            font-size: 12px;
+                        }
+                
+                        @media (max-width: 320px) {
+                            font-size: 10px;
+                        }
                     }
 
                     .text{
@@ -49,6 +149,30 @@
                             font-size: 18px;
                             max-width: 280px;
                             transition: .5s;
+
+                            @media (min-width: 1200px) and (max-width: 1620px) {
+                                font-size: 15px;
+                            }
+                
+                            @media (min-width: 992px) and (max-width: 1199px) {
+                                font-size: 14px;
+                            }
+                    
+                            @media (min-width: 768px) and (max-width: 991px) {
+                                font-size: 12px;
+                            }
+                    
+                            @media (min-width: 480px) and (max-width: 767px) {
+                                font-size: 10px;
+                            }
+                    
+                            @media (min-width: 320px) and (max-width: 479px) {
+                                font-size: 9px;
+                            }
+                    
+                            @media (max-width: 320px) {
+                                font-size: 7px;
+                            }
                         }
                     }
                 }
@@ -57,7 +181,14 @@
                     left: 0;
                     bottom: 0;
 
+                    @media (max-width: 849px) {
+                        display: none;
+                    }
+
                     .circle_grey{
+                        @media (max-width: 849px) {
+                            display: none;
+                        }
                         width: 64px;
                         height: 64px;
                         border-radius: 50%;
@@ -87,6 +218,37 @@
                 z-index: 1;
                 height: 100%;
                 max-width: 600px;
+
+                @media (max-width: 479px) {
+                    width: 100%;
+                }
+
+
+                @media (min-width: 1200px) and (max-width: 1620px) {
+                    height: 90%;
+                    max-width: 500px;
+
+                }
+
+                @media (min-width: 992px) and (max-width: 1199px) {
+                    height: 80%;
+                    max-width: 400px;
+
+                }
+        
+                @media (min-width: 768px) and (max-width: 991px) {
+                    height: 70%;
+                    max-width: 300px;
+
+                }
+        
+                @media (min-width: 480px) and (max-width: 767px) {
+                    height: 60%;
+                    max-width: 240px;
+
+                }
+        
+            
                 
                 * {
                   outline: none;
@@ -102,6 +264,7 @@
                   width: 100%;
                   position: relative;
                   z-index: 1;
+
                   
                   img {
                     width: 100%;
@@ -109,6 +272,36 @@
                     transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
                     transform: scale(1.2);
                     object-fit: cover;
+
+                    @media (min-width: 1200px) and (max-width: 1620px) {
+                        width: 100%;
+                        height: 500px;
+                    }
+
+                    @media (min-width: 992px) and (max-width: 1199px) {
+                        width: 100%;
+                        height: 500px;
+                    }
+            
+                    @media (min-width: 768px) and (max-width: 991px) {
+                        height: 400px;
+                        width: 100%;
+                    }
+            
+                    @media (min-width: 480px) and (max-width: 767px) {
+                        height: 300px;
+                        width: 100%;
+                    }
+            
+                    @media (min-width: 320px) and (max-width: 479px) {
+                        height: 200px;
+                        width: 100%;
+                    }
+            
+                    @media (max-width: 320px) {
+                        height: 100px;
+                        width: 100%;
+                    }
                   }
                   
                   &.slick-active img {
@@ -127,6 +320,10 @@
                     position: absolute;
                     top: 0;
                     right: 0;
+
+                    @media (max-width: 1199px) {
+                        display: none;
+                    }
             
                     .circle{
                         background-color: $orange;
@@ -182,6 +379,9 @@
                     position: absolute;
                     right: 0;
                     bottom: 0;
+                    @media (max-width: 849px) {
+                        display: none;
+                    }
 
                     .circle_grey{
                         width: 64px;

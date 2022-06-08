@@ -1,16 +1,16 @@
-.image{
+.image {
+  width: 100%;
+  height: 1098px;
+  position: relative;
+
+  .backgroung {
     width: 100%;
     height: 1098px;
-    position: relative;
-    
-    .backgroung{
-        width: 100%;
-        height: 1098px;
-        position: absolute;
-        background-image: url(./img/img.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+    position: absolute;
+    background-image: url(./img/img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }

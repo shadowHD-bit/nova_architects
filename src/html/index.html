@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>NOVA</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/logo_browser.png">
+    <link rel="stylesheet" href="index.css" />
+    <title>NOVA ARCHITECTS</title>
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/443bba0f5a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/443bba0f5a.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- SlickSlider -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet"/>
-
-  
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      rel="stylesheet"
+    />
   </head>
-<body>
-
-  <!-- Preloader -->
-  @@include('components/preloader.html')
+  <body>
+    <!-- Preloader -->
+    @@include('components/preloader.html')
 
     <!-- Navbar -->
     @@include('components/navbar.html')
 
-      <!-- Main -->
-      <main>
-        @@include('components/lazy.html')
-        @@include('components/image.html')
-        @@include('components/about.html')
-        @@include('components/project.html')
-        @@include('components/highlights.html')
-        @@include('components/awards.html')
-        @@include('components/office.html')
-        @@include('components/create.html')
-
-      </main>
+    <!-- Main -->
+    <main>
+      @@include('components/lazy.html') @@include('components/image.html')
+      @@include('components/about.html') @@include('components/project.html')
+      @@include('components/highlights.html')
+      @@include('components/awards.html') @@include('components/office.html')
+      @@include('components/create.html')
+    </main>
 
     <!-- Footer -->
     @@include('components/footer.html')
@@ -44,5 +47,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>

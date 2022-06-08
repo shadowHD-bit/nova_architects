@@ -1,36 +1,37 @@
 // Main styles file
 
-@import './settings/colors';
-@import './settings/fonts';
-@import './components/navbar';
-@import './components/lazy';
-@import './components/image';
-@import './components/about';
-@import './components/projtect';
-@import './components/high';
-@import './components/awards';
-@import './components/office';
-@import './components/create';
-@import './components/footer';
-@import './components/preloader';
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./components/navbar";
+@import "./components/lazy";
+@import "./components/image";
+@import "./components/about";
+@import "./components/projtect";
+@import "./components/high";
+@import "./components/awards";
+@import "./components/office";
+@import "./components/create";
+@import "./components/footer";
+@import "./components/preloader";
 
 body::-webkit-scrollbar {
-    width: 12px;               /* ширина scrollbar */
+  width: 12px; 
 }
 body::-webkit-scrollbar-track {
-    background: $orange;        /* цвет дорожки */
+  background: $orange; 
 }
 body::-webkit-scrollbar-thumb {
-    background-color: white;    /* цвет плашки */
-    border-radius: 20px;       /* закругления плашки */
-    border: 3px solid $orange;  /* padding вокруг плашки */
+  background-color: white; 
+  border-radius: 20px;
+  border: 3px solid $orange; 
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-main{
-    height: auto;
+main {
+  height: auto;
 }

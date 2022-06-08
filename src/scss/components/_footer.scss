@@ -3,15 +3,32 @@ footer{
     height: auto;
     margin: 0px 140px;
 
+    @media (max-width: 1199px) {
+        margin: 0px 100px;
+    }
+
+    @media (max-width: 767px) {
+        margin: 0px 50px;
+    }
+
     .footer_content{
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: row;
 
+        @media (max-width: 991px) {
+            flex-direction: column;
+        }
+
         .info{
             width: 33.3%;
             padding: 40px;
+
+            @media (max-width: 991px) {
+                width: 100%;
+                padding: 10px 0px 10px 0px;
+            }
 
             .block_info{
                 width: 100%;
@@ -63,6 +80,10 @@ footer{
         display: flex;
         flex-direction: column;
 
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+
         a{
             text-decoration: none;
         }
@@ -71,6 +92,11 @@ footer{
             width: 100%;
             text-align: center;
             padding: 70px 0px;
+
+            @media (max-width: 991px) {
+                padding: 20px 0px;
+
+            }
 
             span{
                 text-decoration: none;

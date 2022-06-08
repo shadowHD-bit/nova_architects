@@ -20,6 +20,15 @@ header{
             position: absolute;
             display: flex;
             justify-content: center;
+
+            @media (max-width: 1199px) {
+                width: 100px !important;
+            }
+
+            @media (max-width: 767px) {
+                width: 50px !important;
+            }
+            
             
             .logo{
                 width: 100%;
@@ -51,6 +60,10 @@ header{
                     transition: ease all .5s;
                 }
             }
+
+            @media (max-width: 1199px) {
+                display: none;
+            }
         }
 
         .right_section{
@@ -65,11 +78,48 @@ header{
             transition: ease all .5s;
             background-color: $orange;
             cursor: pointer;
+
+            @media (max-width: 1199px) {
+                width: 100px !important;
+            }
+            @media (max-width: 767px) {
+                width: 50px !important;
+            }
             
             .nav_btn{
                 color: white;
                 text-decoration: none;
                 transition: ease all .5s;
+
+                @media (min-width: 1199px) {
+                    display: contents;
+                }
+
+                @media (max-width: 1199px) {
+                    display: none;
+                }
+                
+            }
+
+            i{
+                color: white;
+                font-size: 40px;
+
+                @media (max-width: 767px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width: 1199px) {
+                    display: none;
+                }
+
+                @media (max-width: 1199px) {
+                    display: contents;
+                }
+            }
+
+            i:hover{
+                color: $orange;
             }
         }
 
